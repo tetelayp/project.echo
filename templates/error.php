@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title><?=$title?></title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,9 @@
     <![endif]-->
 </head>
 <body>
-<h1>Hello, world!</h1>
-<div class="alert alert-danger">ERROR</div>
+<?php foreach ($errors as $error):?>
+<div class="alert alert-danger"><?=$error;?></div>
+<?php endforeach;?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../scripts/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

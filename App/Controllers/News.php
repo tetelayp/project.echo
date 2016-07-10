@@ -27,7 +27,10 @@ class News
 
     public function actionIndex()
     {
-
+        $this->view->menu=\App\Models\Menu::fetchAll();
+        $this->view->news=\App\Models\News::fetchAll();
+        $this->view->title='ECHOCITY';
+        $this->view->display(__DIR__ . '/../../templates/index.php');
     }
 
     
