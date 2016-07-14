@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 
+use App\Exception\MultiException;
 use App\View;
 
 class News
@@ -31,6 +32,18 @@ class News
         $this->view->news=\App\Models\News::fetchAll();
         $this->view->title='ECHOCITY';
         $this->view->display(__DIR__ . '/../../templates/index.php');
+    }
+
+    public function actionCreate()
+    {
+        try{
+            $article=new \App\Models\News();
+            $article->fill([]);
+            $article->save;
+        } catch (MultiException $e){
+            $this->view->errors=$e;
+        }
+        $this->view->display(__DIR__ . '/../../templates/create.php');
     }
 
     

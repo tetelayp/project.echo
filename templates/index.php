@@ -19,30 +19,36 @@
 </head>
 <body>
 <header>
-    <nav>
-        <ul >
-            <?php foreach ($menu as $item):?>
-                <li><a href="#"> <?php echo $item->title ?></a></li>
-            <?php endforeach;?>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div>
+                <ul class="nav navbar-nav">
+                    <?php foreach ($menu as $item):?>
+                        <li><a href="#"> <?php echo $item->title ?></a></li>
+                    <?php endforeach;?>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
 </header>
 <main>
-    <?php foreach ($news as $i):?>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3>
-                    <?php echo $i->title ?>
-                </h3>
+    <div class="container">
+        <?php foreach ($news as $i):?>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>
+                        <?php echo $i->title ?>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        <?php echo $i->text ?>
+                    </p>
+                </div>
             </div>
-            <div class="panel-body">
-                <p>
-                    <?php echo $i->text ?>
-                </p>
-            </div>
-        </div>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
+    </div>
     <div>Info</div>
 </main>
 <div class="alert alert-danger">end index.php</div>

@@ -19,7 +19,7 @@
 </head>
 <body>
 <?php foreach ($errors as $error):?>
-<div class="alert alert-danger"><?=$error;?></div>
+<div class="alert alert-danger"><?=$error->getMessage();?></div>
 <?php endforeach;?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../scripts/jquery.min.js"></script>

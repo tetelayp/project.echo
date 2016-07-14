@@ -6,4 +6,5 @@
 require __DIR__ . '/autoload.php';
 
 $news=new \App\Controllers\News();
+
 $news->action('Index');
