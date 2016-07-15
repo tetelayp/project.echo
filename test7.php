@@ -41,31 +41,19 @@ $arr =[
     ['c1', 'c2', 'c3'],
     ['d1']
 ];
-//var_dump($arr);
-$counter = array_fill(0,count($arr),0);
-//var_dump($counter);
-function is_end(array $counter, array $array)
-{
-    $res=0;
-    foreach ($counter as $k=>$v){
-        $res+=$v-count($array[$k]);
-    }
-    return $res === 0;
-}
 
-//var_dump(is_end($counter, $arr));
+$counter = array_fill(0,count($arr),0);
 
 function counter_increment(array &$counter, array $pattern)
 {
-    $counter[0]++;
-    for ($i=0; $i<(count($counter)-1); $i++){
+    $counter[count($counter)-1]++;
+    for ($i=(count($counter)-1); $i>0; $i--){
         if ($counter[$i]==count($pattern[$i])){
             $counter[$i]=0;
-            $counter[$i+1]++;
+            $counter[$i-1]++;
         }
     }
-    $i = count($counter)-1;
-    if ($counter[$i]==count($pattern[$i])){
+    if ($counter[0]==count($pattern[0])){
         return false;
     }
 
@@ -75,16 +63,16 @@ function counter_increment(array &$counter, array $pattern)
 
 $result=[];
 do {
-    //var_dump($counter);
-    //echo '<br>';
+
     $tmp = [];
     foreach ($counter as $k => $v) {
-        //echo 'k = ' . $k . '  v = ' . $v . '<br>';
         $tmp[] = $arr[$k][$v];
     }
     $result[] = $tmp;
 
 } while (counter_increment($counter, $arr));
-//} while (!is_end($counter, $arr));
 
-var_dump($result);
+
+foreach ($result as $v){
+    echo implode(' ', $v) . '<br>';
+}

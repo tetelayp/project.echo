@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1064fe6-0686-478f-a5e4-45a56fdc7b02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test6.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test7.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test7.php" afterPath="$PROJECT_DIR$/test7.php" />
     </list>
     <ignored path="project.echo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +63,8 @@
       <file leaf-file-name="test7.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test7.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#6#653#0#PHP" expanded="true" />
               </folding>
@@ -323,7 +322,7 @@
       <workItem from="1468461257941" duration="32688000" />
       <workItem from="1468515234187" duration="740000" />
       <workItem from="1468551370318" duration="766000" />
-      <workItem from="1468570748280" duration="8252000" />
+      <workItem from="1468570748280" duration="9426000" />
     </task>
     <task id="LOCAL-00001" summary="+ Db exception">
       <created>1468057510204</created>
@@ -353,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468501877379</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="+ test 6, 7">
+      <created>1468582376478</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1468582376478</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101375000" />
+    <option name="totallyTimeSpent" value="102549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,7 +384,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840237" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840237" sideWeight="0.48763737" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.48763737" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -407,7 +413,8 @@
     <MESSAGE value="+ MultiException, templates/error.php" />
     <MESSAGE value="+ controller news" />
     <MESSAGE value="+ testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ testing" />
+    <MESSAGE value="+ test 6, 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ test 6, 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -758,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test7.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="e#6#653#0#PHP" expanded="true" />
           </folding>
